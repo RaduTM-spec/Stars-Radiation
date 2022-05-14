@@ -1,0 +1,100 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[romanian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage[super]{nth}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage[rightcaption]{sidecap}
+\graphicspath{c:/Users/X/Desktop/imaginiLatex}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+
+\title{\textbf{Radiațiile stelelor}}
+\author{
+\textbf{Radu Ciobanu},\\
+\textbf{Mihai Constantinescu},\\
+\textbf{Alex Baciu},\\\\
+Universitatea de Vest, \\
+Facultatea de Matematică și Informatică, \\
+Timișoara, România\\}
+
+\date{1 Iunie 2022}
+
+\begin{document}
+\maketitle
+\textit{\textbf{Rezumat.}}
+Orice obiect din univers emite radiații odată ce este încălzit. Un \textit{blackbody} este un sistem ce absoarbe toată radiația care îl lovește.
+Spre exemplu, o suprafață mată de culoare neagră sau o cavitate cu o mică gaură (precum un cuptor) este considerat \textit{blackbody}, care la rândul lui emite radiații. Chiar și radiația soarelui este aproape de a fi o radiație de tip \textit{blackbody}. Noțiunea de \textit{corp negru absolut} a fost introdus în fizică odată cu studiul proceselor de interacțiune a radiației cu materia (emisia și absorbția radiațiilor). Prin definiție, un corp absolut negru este un corp care absoarbe integral radiația, fără să reflecte sau să transmită nicio fracțiune din energia radiației incidente. El însă poate emite radiație.
+
+\linebreak
+\textbf{Cuvinte-cheie:}
+Radiație, Corp negru, Stele\\
+
+\tableofcontents
+
+\pagebreak
+\begin{multicols}{2}
+
+\section{Introducere}
+Stelele sunt o sursă de lumină din spectrul vizbil, dar totodată ele emit raze \textit{UV, X} inclusiv \textit{Gamma}. Emisia de radiație solară depinde de  temperatura suprafeței și de activitatea sa. În [1], autorii spun că emisia legată de evoluția si tipul spectral al stelei, care poate fi foarte variabil, temperatura de la suprafața sa determinând totalul de radiație de tip \textit{blackbody}. De-a lungul vieții, radiația emisă de o stea se schimbă. O stea tânără tinde să fie în general mai puțin luminoasă, dar foarte activă, producând foarte frecvent semnale luminoase intense. Activitatea stelelor tinde să scadă, mai pronunțat în cazul stelelor de masă mare, în schimb, cele de masă scăzută (precum stelele pitice) continuă să fie foarte active.
+\linebreak
+Propusă la sfarșitul secolului 19, legea \textit{Rayleigh-Jeans} exprimă densitatea energiei a radiației unui corp negru de lățime de undă $\lambda$  ca:
+
+
+\[f(\lambda) =\dfrac {8\pi \textit{kT}} {\lambda^2}\]
+
+
+
+unde $\lambda$ este măsurat în metri, \textit{T} este temperatura în kelvin (K), iar \textit{k} este constanta Boltzmann. Legea Rayleigh-Jeans în concordanță cu masurătorile experimentale în cazul lungimilor de undă mari, dar nu și pentru 
+cele de lungime scăzută. Legea presupune că \(f(\lambda) \to\infty\) cum \(\lambda \to 0^+\), dar experimentele arătând că \(f(\lambda) \to 0\). Acest lucru este cunoscut sub numele de \textit{catastrofa ultravioletă}
+În 1900, Max Plank a creat un model mai bun (Legea lui Plank) pentru radiațiile corpurilor negre:
+
+\[  
+f(\lambda) =
+\dfrac 
+{8\pi \textit{hc}\lambda^{-5}} 
+ {e^{ \textit{hc}/(\lambda \textit{kT})}    -1 }
+\]
+ 
+unde $\lambda$ este măsurat în metri, \textit{T} este temperatura (în kelvin), și 
+\begin{center}
+
+  constanta Plank: 
+\[  \textit{h} =  6.6262 \times 10^{-34} J\cdot s  \]
+
+  viteza luminii:
+\[  \textit{c} =  2.997925 \times 10^{8} m/s  \]
+
+  constanta Boltzmann:  
+\[  \textit{k} =  1.3807 \times 10^{-23} J/K  \]
+
+   
+\end{center}
+
+\linebreak
+
+În această lucrare vom dovedi în primul rând că legea lui Plank modelează mai bine radiațiile corpurilor negre față de legea Rayleigh-Jeans pentru lungimile de undă scazute, dar și faptul că în cazul celor ridicate ambele formule dau rezultate aproximativ egale. După care, folosind un grafic pentru reprezentarea legilor vom estima valoarea lui $\lambda$ pentru care \textit{f($\lambda)$} este maximul pentru legea lui Plank. În final, vom investiga modificarea graficului cand \textit{T} variază (folosind legea lui Plank) și vom afla de ce Sirius, cea mai strălucitoare stea de pe cer, este o stea albastră, iar Betelgeuse, una dintre cele mai mari stele din universul observabil, este o stea roșie.
+
+\pagebreak
+\end{multicols}
+
+
+\section{Diferențele dintre legile Rayleigh-Jeans și Plank}
+\section{Legea lui Plank aplicată stelelor}
+
+\begin{thebibliography}{}
+\bibitem{textbook}
+Ximena C. Abrevaya, Brian C. Thomas, \textit{Habitability of the Universe Before Earth} (2018)
+
+\end{thebibliography}
+
+
+\end{document}
