@@ -93,7 +93,42 @@ unde $\lambda$ este măsurat în metri, \textit{T} este temperatura (în kelvin)
 \end{multicols}
 
 
+
+
+
+
+
 \section{Diferențele dintre legile Rayleigh-Jeans și Plank}
+
+%Rezolvare 1
+%rez cele doua limite și explicarea ca Plank se modeleaza mai bine undele scurte
+1)Text
+\linebreak
+
+%Rezolvare 2
+%calculare prin taylor ca pe undele lungi rezultate sunt aprox egale
+2)Text
+\linebreak
+
+%Rezolvare 3
+\includegraphics[scale = .36]{RayLeight-Jeans_pentru_3.eps}\\
+
+    Graficul \textit{f} unde T = 5700K pentru Legea Rayleigh-Jeans\\\\
+\includegraphics[scale = .21]{pentru_3.eps}\\
+
+  Graficul \textit{f} unde T = 5700K pentru Legea lui Plank  
+\pagebreak
+\begin{multicols}{2}
+3) După observarea celor două grafice, putem observa că în cazul Rayleigh-Jeans, odată ce $\lambda \to 0^+$ (adică pentru lungimile de undă scăzute), \textit{f($\lambda) \to \infty$},  iar în cazul Plank \textit{f($\lambda)\to 0$}.
+
+
+
+
+%Text pentru Exemplificarea diferentelor si asemanarilor
+
+\end{multicols}
+
+
 
 
 
@@ -101,14 +136,21 @@ unde $\lambda$ este măsurat în metri, \textit{T} este temperatura (în kelvin)
 
 \section{Legea lui Plank aplicată stelelor}
 
+\begin{multicols}{2}
+
 %Rezolvare 4
-Pentru estimarea valorii lui \(\lambda\) în care \texttit{f(\(\lambda)\)} 
+4) Pentru estimarea valorii lui \(\lambda\) în care \texttit{f(\(\lambda)\)} 
 este maxim pentru Legea lui Plank, ne vom folosi de graficul din secțiunea precedentă.
 \linebreak
 
 
 %Rezolvare 5
-De ce Sirius este cunoscută ca o stea albastră, iar Betelgeuse o stea roșie? Ca să aflăm, trebuie să vedem cum graficul lui \texttt{f} variază în funcție de T. În particular, avem un grafic al radiației provenite de la cele 3 stele de mai jos.
+5) De ce Sirius este cunoscută ca o stea albastră, iar Betelgeuse o stea roșie? Ca să aflăm, trebuie să vedem cum graficul lui \texttt{f} variază în funcție de T. În particular, avem un grafic al radiației provenite de la cele 3 stele de mai jos.
+
+\end{multicols}
+
+
+
 
 \includegraphics[scale = .12]{1.eps}%Betlegeuse
 \includegraphics[scale = .11]{4.eps}%Procyon
@@ -138,7 +180,7 @@ Vârstă: 230 mil. ani\\
 Diferența de mărime dintre cele 3 stele
 \end{center}
 
-\includegraphics[scale = .35]{}%Comparison
+\includegraphics[scale = .2]{pentru_5.eps}%Comparison
 \begin{center}
 Graficul \textit{f} în funcție de T pentru\\
 \color{blue} Betelgeuse\\
@@ -147,10 +189,17 @@ Graficul \textit{f} în funcție de T pentru\\
 \color{green} Sirius\\
 \end{center}
 
+
+
+
+
 %Explanation
 \begin{thebibliography}{}
 \bibitem{textbook}
 Ximena C. Abrevaya, Brian C. Thomas, \textit{Habitability of the Universe Before Earth} (2018)
+
+\bibitem{textbook}
+James Stewart, \textit{Calculus, Early Transcendentals}, \nth{8}  edition (1991)
 
 \end{thebibliography}
 
