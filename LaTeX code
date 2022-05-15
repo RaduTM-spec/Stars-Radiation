@@ -4,6 +4,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{xcolor}
 \usepackage{amsthm}
 \usepackage{blindtext}
 \usepackage{multicol}
@@ -17,14 +18,19 @@
 \usepackage{wrapfig}
 \usepackage{hyperref}
 
-\title{\textbf{Radiațiile stelelor}}
+\title{\huge\textbf{Radiațiile stelelor}}
 \author{
 \textbf{Radu Ciobanu},\\
 \textbf{Mihai Constantinescu},\\
-\textbf{Alex Baciu},\\\\
+\textbf{Alex Baciu},\\
 Universitatea de Vest, \\
 Facultatea de Matematică și Informatică, \\
-Timișoara, România\\}
+Timișoara, România\\
+\tiny
+\textbf{Emails: }
+\texttt{radu.ciobanu02@e-uvt.ro, mihai.constantinescu02@e-uvt.ro, alex.baciu01@e-uvt.ro}
+}
+
 
 \date{1 Iunie 2022}
 
@@ -54,7 +60,7 @@ Propusă la sfarșitul secolului 19, legea \textit{Rayleigh-Jeans} exprimă dens
 
 
 unde $\lambda$ este măsurat în metri, \textit{T} este temperatura în kelvin (K), iar \textit{k} este constanta Boltzmann. Legea Rayleigh-Jeans în concordanță cu masurătorile experimentale în cazul lungimilor de undă mari, dar nu și pentru 
-cele de lungime scăzută. Legea presupune că \(f(\lambda) \to\infty\) cum \(\lambda \to 0^+\), dar experimentele arătând că \(f(\lambda) \to 0\). Acest lucru este cunoscut sub numele de \textit{catastrofa ultravioletă}
+cele de lungime scăzută. Legea presupune că \(f(\lambda) \to\infty\) cum \(\lambda \to 0^+\), dar experimentele arătând că \(f(\lambda) \to 0\). Acest lucru este cunoscut sub numele de \textit{catastrofa ultravioletă}.
 În 1900, Max Plank a creat un model mai bun (Legea lui Plank) pentru radiațiile corpurilor negre:
 
 \[  
@@ -88,8 +94,60 @@ unde $\lambda$ este măsurat în metri, \textit{T} este temperatura (în kelvin)
 
 
 \section{Diferențele dintre legile Rayleigh-Jeans și Plank}
+
+
+
+
+
 \section{Legea lui Plank aplicată stelelor}
 
+%Rezolvare 4
+Pentru estimarea valorii lui \(\lambda\) în care \texttit{f(\(\lambda)\)} 
+este maxim pentru Legea lui Plank, ne vom folosi de graficul din secțiunea precedentă.
+\linebreak
+
+
+%Rezolvare 5
+De ce Sirius este cunoscută ca o stea albastră, iar Betelgeuse o stea roșie? Ca să aflăm, trebuie să vedem cum graficul lui \texttt{f} variază în funcție de T. În particular, avem un grafic al radiației provenite de la cele 3 stele de mai jos.
+
+\includegraphics[scale = .12]{1.eps}%Betlegeuse
+\includegraphics[scale = .11]{4.eps}%Procyon
+\includegraphics[scale = .12]{2.eps}%Sirius
+\begin{multicols}{3}
+\textbf{Betelgeuse}\\
+Temperatură: 3400K\\
+Masă: 15 \cdot \(M_\odot\)\\
+Rază: 617.100.000 km\\
+Vârstă: 10 mil. ani\\\\
+
+\textbf{Procyon}\\
+Temperatură: 6400K\\
+Masă: 1.5 \cdot \(M_\odot\)\\
+Rază: 1.295.192 km\\
+Vârstă: 1,7 mld. ani\\\\
+
+\textbf{Sirius}\\
+Temperatură: 9200K\\
+Masă: 2.02 \cdot \(M_\odot\)\\
+Rază: 1.191.437 km\\
+Vârstă: 230 mil. ani\\
+\end{multicols}
+
+\includegraphics[scale = .35]{3.eps}%Comparison
+\begin{center}
+Diferența de mărime dintre cele 3 stele
+\end{center}
+
+\includegraphics[scale = .35]{}%Comparison
+\begin{center}
+Graficul \textit{f} în funcție de T pentru\\
+\color{blue} Betelgeuse\\
+\color{red} Soare\\
+\color{black} Procyon\\
+\color{green} Sirius\\
+\end{center}
+
+%Explanation
 \begin{thebibliography}{}
 \bibitem{textbook}
 Ximena C. Abrevaya, Brian C. Thomas, \textit{Habitability of the Universe Before Earth} (2018)
