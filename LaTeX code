@@ -102,31 +102,74 @@ unde $\lambda$ este măsurat în metri, \textit{T} este temperatura (în kelvin)
 
 %Rezolvare 1
 %rez cele doua limite și explicarea ca Plank se modeleaza mai bine undele scurte
-1)Text
-\linebreak
+1) Pentru a arăta diferența dintre cele două legi, vom arăta că Legea lui Plank se modelează mai bine în cazul undelor scurte prin calcularea limitelor $\lim_{\lambda \to 0^+}f(\lambda) = 0$ și $\lim_{\lambda \to \infty}f(\lambda) = 0$, rezultatul fiind conform predicțiilor experimentale. Vom prelucra prima limită pentru a o aduce într-o formp cu care putem lucra mai ușor. Asftel, aplicând legea lui L'Hospital obținem cazul exceptat \dfrac{\infty}{\infty}.\\
+\begin{math}
+\lim_{\lambda \to 0^+}f(\lambda) = \lim_{\lambda \to 0^+} \dfrac 
+{8\pi \textit{hc}\lambda^{-5}} 
+ {e^{ \textit{hc}/(\lambda \textit{kT})}    -1 } = \lim_{\lambda \to 0^+} \dfrac 
+{\lambda^{-5}} 
+ {e^{ \textit{hc}/(\lambda \textit{kT})}    -1 } = \\\\
+ 8\pi hc \cdot \lim_{\lambda \to 0^+} \dfrac{-5\lambda^{-6}}{\dfrac{hc}{kt} \cdot (\dfrac{-1}{\lambda^2}) \cdot e^{\dfrac{hc}{kt} \cdot \dfrac{1}{\lambda}}}  = \dfrac{8\pi hc \cdot kT}{hc} \cdot \dfrac{-5}{-1} \cdot \lim_{\lambda \to 0^+} \dfrac{\lambda^{-6}}{\dfrac{1}{\lambda^2}\cdot e^{\dfrac{hc}{kT} \cdot \dfrac{1}{\lambda}}} = \\\\
+ 40 \pi kT \cdot \lim_{\lambda \to 0^+} \dfrac{\lambda^{-8}}{e^{\dfrac{hc}{kT} \cdot \dfrac{1}{\lambda}}} = 
+ 40\pi kT \cdot lim_{\lambda \to 0^+} \dfrac{1}{\lambda^8 \cdot e{\dfrac{hc}{kT} \cdot \dfrac{1}{\lambda}}}\\
+ \linebreak
+ Notăm: \\
+ g(\lambda) = \lim_{\lambda \to 0^+} 1 = 1\\
+ h(\lambda) = \lim_{\lambda \to 0^+} \lambda^8 \cdot e^{\dfrac{hc}{kT} \cdot \dfrac{1}{\lambda}} = \lim_{\lambda \to 0^+} \dfrac{e^{\dfrac{hc}{kT} \cdot \dfrac{1}{\lambda}}}{\dfrac{1}{\lambda^8}}}\\
+ \end{math}
+ Din nou aplicăm regula lui L'Hospital pentru limita $h(\lambda)$ și obținem cazul exceptat \dfrac{\infty}{\infty}.\\
+\begin{math}
+h(\lambda) = \lim_{\lambda \to 0^+} \dfrac{-\dfrac{hc}{kT}\cdot \dfrac{e^{\dfrac{hc}{kT}\cdot \dfrac{1}{\lambda}}}{\lambda^2}}{-8 \cdot \dfrac{1}{\lambda^9}} = 
+\lim_{\lambda \to 0^+} \dfrac{hc}{8kT} \cdot e^{\dfrac{hc}{kT}\cdot \dfrac{1}{\lambda}}\cdot \lambda^7 = \\
+\dfrac{hc}{kT} \cdot \dfrac{1}{8} \cdot \lim_{\lambda \to 0^+}  e^{\dfrac{hc}{kT}\cdot \dfrac{1}{\lambda}}  \cdot \lambda^7 = 
+\dfrac{hc}{kT} \cdot \dfrac{1}{8} \cdot \lim_{\lambda \to 0^+} \dfrac{hc}{kT}\cdot \dfrac{1}{7}\cdot e^{\dfrac{hc}{kT}\cdot \dfrac{1}{\lambda}} \cdot \lambda^6 = \\
+(\dfrac{hc}{kT})^2 \cdot \dfrac{1}{56} \cdot         \lim_{\lambda \to 0^+} e^{\dfrac{hc}{kT}\cdot \dfrac{1}{\lambda}} \cdot \lambda^6
+\end{math}
+%ce mai e a doua pagina
 
+Observăm că obținem tot cazul exceptat $\dfrac{\infty}{\infty}$, astfel aplicăm în cotninuare regula lui L'Hospital în mod analog până nu mai obținem o restricție. Limita obținută fără restricție este:\\
+\begin{math}
+$$
+        h(\lambda) = \left(\frac{hc}{kT}\right)^8 \cdot \frac{1}{8} \cdot \frac{1}{7} \cdot \frac{1}{6} \cdot \frac{1}{5} \cdot \frac{1}{4} \cdot \frac{1}{3} \cdot \frac{1}{2} \cdot \lim_{\lambda\to0^+} \left( e^\left(\frac{1}{\lambda}\right) \right) = \left(\frac{hc}{kT}\right)^8 \cdot \frac{1}{8!} \cdot \infty = \infty
+    $$
+\end{math}\\
+În urma calculelor, limita inițială devine: \\
+\begin{math}
+\begin{center}
+   \lim_{\lambda \to 0^+} f(\lambda) = \dfrac{g(\lambda)}{h(\lambda)} = \dfrac{1}{\infty} = 0 
+\end{center}
+
+\end{math}
+\linebreak
+\\\\
 %Rezolvare 2
 %calculare prin taylor ca pe undele lungi rezultate sunt aprox egale
 2)Text
 \linebreak
 
 %Rezolvare 3
+3) Graficul \color{green}Rayleigh-Jeans \color{black}se suprapune cu cel pentru \color{red}Plank \color{black}, doar că funcția se extinde în ultimul grafic.\\
 \includegraphics[scale = .36]{RayLeight-Jeans_pentru_3.eps}\\
 
     Graficul \textit{f} unde T = 5700K pentru Legea Rayleigh-Jeans\\\\
+    
+    
+    %%%%%%%%%%%%INTRODUCERE GREENFOR3
+    
+\includegraphics[scale = .48]{GreenFor3.eps}\\
 \includegraphics[scale = .21]{pentru_3.eps}\\
 
   Graficul \textit{f} unde T = 5700K pentru Legea lui Plank  
 \pagebreak
-\begin{multicols}{2}
-3) După observarea celor două grafice, putem observa că în cazul Rayleigh-Jeans, odată ce $\lambda \to 0^+$ (adică pentru lungimile de undă scăzute), \textit{f($\lambda) \to \infty$},  iar în cazul Plank \textit{f($\lambda)\to 0$}.
+
+ După observarea celor două grafice, putem vedea că în cazul Rayleigh-Jeans, odată ce $\lambda \to 0^+$ (adică pentru lungimile de undă scăzute), \textit{f($\lambda) \to \infty$},  iar în cazul Plank \textit{f($\lambda)\to 0$}.
 
 
 
 
 %Text pentru Exemplificarea diferentelor si asemanarilor
 
-\end{multicols}
+
 
 
 
@@ -136,18 +179,17 @@ unde $\lambda$ este măsurat în metri, \textit{T} este temperatura (în kelvin)
 
 \section{Legea lui Plank aplicată stelelor}
 
-\begin{multicols}{2}
+
 
 %Rezolvare 4
 4) Pentru estimarea valorii lui \(\lambda\) în care \texttit{f(\(\lambda)\)} 
-este maxim pentru Legea lui Plank, ne vom folosi de graficul din secțiunea precedentă.
-\linebreak
+este maxim pentru Legea lui Plank, ne vom folosi de graficul din secțiunea precedentă.\\
 
 
 %Rezolvare 5
 5) De ce Sirius este cunoscută ca o stea albastră, iar Betelgeuse o stea roșie? Ca să aflăm, trebuie să vedem cum graficul lui \texttt{f} variază în funcție de T. În particular, avem un grafic al radiației provenite de la cele 3 stele de mai jos.
 
-\end{multicols}
+
 
 
 
